@@ -77,8 +77,9 @@ char* gl_error_6;
 char**  gl_rom_menu;
 char**  gl_nor_op;
 
+char* gl_credit;
 
-//櫓匡
+//
 const char zh_init_error[]="Micro SD 카드 작동 에러";
 const char zh_power_off[]="전원 끄기";
 const char zh_init_ok[]="Micro SD 카드 작동 완료";
@@ -165,7 +166,7 @@ const char *zh_nor_op[3]={
 	"전체 포맷",
 };
 
-
+const char zh_credit[]="한글화: r35, multi-vitamin";
 
 //亶匡
 const char en_init_error[]="Micro SD card initial error";
@@ -251,7 +252,9 @@ const char *en_nor_op[3]={
 	"DIRECT BOOT",
 	"DELETE",
 	"FORMAT ALL",
-};	
+};
+
+const char en_credit[]="한글화: r35, multi-vitamin";	
 
 //---------------------------------------------------------------------------------
 void LoadChinese(void)
@@ -332,6 +335,7 @@ void LoadChinese(void)
 	gl_rom_menu = (char**)zh_rom_menu;
 	gl_nor_op = (char**)zh_nor_op;
 
+	gl_credit = (char*)zh_credit;
 }
 //---------------------------------------------------------------------------------
 void LoadEnglish(void)
@@ -409,4 +413,6 @@ void LoadEnglish(void)
 	//
 	gl_rom_menu = (char**)en_rom_menu;
 	gl_nor_op = (char**)en_nor_op;
+
+	gl_credit = (char*)en_credit;
 }
