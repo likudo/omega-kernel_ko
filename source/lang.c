@@ -166,7 +166,7 @@ const char *zh_nor_op[3]={
 	"전체 포맷",
 };
 
-const char zh_credit[]="한글화: r35, multi-vitamin";
+const char zh_credit[]="한글화: r35, 개굴소";
 
 //亶匡
 const char en_init_error[]="Micro SD card initial error";
@@ -254,7 +254,7 @@ const char *en_nor_op[3]={
 	"FORMAT ALL",
 };
 
-const char en_credit[]="한글화: r35, multi-vitamin";	
+const char en_credit[]="한글화: r35, 개굴소";	
 
 //---------------------------------------------------------------------------------
 void LoadChinese(void)
